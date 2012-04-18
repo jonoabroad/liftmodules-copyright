@@ -1,5 +1,5 @@
 /*
-	Copyright 2011 Spiral Arm Ltd
+	Copyright 2012 Spiral Arm Ltd
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -13,12 +13,14 @@
    See the License for the specific language governing permissions and
    limitations under the License.package bootstrap.liftmodules
 */
-package net.liftmodules.modulename
+package bootstrap.liftmodules
 
-import scala.xml.Unparsed
+import net.liftweb.http.LiftRules
 
-//Do clever stuff here.
-object ModuleName {
-
-  
+object Copyright {
+	
+	def init : Unit = {
+		LiftRules.addToPackages("net.liftmodules.copyright")
+	}
+	
 }

@@ -1,6 +1,6 @@
-name := "module-name"
+name := "copyright"
 
-version := "2.4"
+version := "2.4-1.0"
 
 organization := "net.liftmodules"
  
@@ -12,8 +12,7 @@ resolvers += "Java.net Maven2 Repository" at "http://download.java.net/maven/2/"
 
 libraryDependencies ++= {
   val liftVersion = "2.4" 
-  Seq(
-    "net.liftweb" %% "lift-webkit" % liftVersion % "compile->default")
+  Seq("net.liftweb" %% "lift-webkit" % liftVersion % "compile->default")
 }
 
 // Customize any further dependencies as desired

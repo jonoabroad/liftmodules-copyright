@@ -32,7 +32,7 @@ object Copyright {
   val companyName = Props.get("liftmodules.copyright.companyName").getOrElse("")
 
   /**
-   * Will produce a span with © COMPANY_NAME inceptionYear ndash currentYear if the inception year exists and the current year is different that
+   * Will produce a span with COMPANY_NAME © inceptionYear ndash currentYear if the inception year exists and the current year is different that
    * the inception year, otherwise the span will contain the current Year only.
    */
   def render = {
@@ -40,7 +40,7 @@ object Copyright {
     val currentYear = Calendar.getInstance.get(Calendar.YEAR)
     val years = currentYear.toString :: boxedYearOfInception.toList
 
-    <span>© <span class="crcn">{companyName}</span> {Unparsed(years.distinct.reverse.mkString("&ndash;")) }</span>
+    <span><span class="crcn">{companyName}</span> © {Unparsed(years.distinct.reverse.mkString("&ndash;")) }</span>
 
   }
 

@@ -1,6 +1,6 @@
 name := "copyright"
 
-version := "2.5-SNAPSHOT-1.0"
+version := "2.5-1.0"
 
 organization := "net.liftmodules"
  
@@ -13,7 +13,7 @@ resolvers += "Java.net Maven2 Repository" at "http://download.java.net/maven/2/"
 resolvers += "snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
 
 libraryDependencies ++= {
-  val liftVersion = "2.5-SNAPSHOT" 
+  val liftVersion = "2.5" 
   Seq("net.liftweb" %% "lift-webkit" % liftVersion % "compile->default")
 }
 
